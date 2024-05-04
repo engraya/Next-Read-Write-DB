@@ -6,7 +6,7 @@ function Footer() {
     <div className="w-full mx-auto max-w-screen-xl p-4  md:items-center md:justify-center">
   <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400"><RxGithubLogo />
   </span>
-  <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" className="hover:underline">Next-CRUD™</a>. All Rights Reserved.
+  <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" className="hover:underline">Read&Write DB™</a>. All Rights Reserved.
   </span>
 </div>
 </div>

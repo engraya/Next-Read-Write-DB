@@ -1,17 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import logo from "../assets/database.svg"
 function NewNavBar() {
 
     const navigationLinks = [
         { name: 'Home', href: '/' },
         { name: 'Databases', href: '/databases' },
-        { name: 'Reviews', href: '/reviews' },
-        { name: 'Contact Us', href: '/contact' },
-        { name: 'Our Team', href: '/our-team' },
+        // { name: 'Reviews', href: '/reviews' },
+        // { name: 'Contact Us', href: '/contact' },
+        // { name: 'Our Team', href: '/our-team' },
         { name: 'Products', href: '/products' },
         { name: 'Employees', href: '/employees' },
-        { name: 'New Product', href: '/create-product' },
-        { name: 'Update Product', href: '/update-product' },
+        // { name: 'New Product', href: '/create-product' },
+        // { name: 'New Employee', href: '/add-employee' },
       ]
 
 
@@ -19,10 +21,12 @@ function NewNavBar() {
   return (
 <nav className="border-gray-200 dark:bg-gray-900">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="https://readymadeui.com/readymadeui.svg" className="h-8" alt="Flowbite Logo" />
+    <Link href="/">
+    <div className="flex items-center space-x-3 rtl:space-x-reverse">
+      <Image src={logo} width={50} height={50} alt='Logo'/>
       {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CRUD Databases</span> */}
-    </a>
+    </div>
+    </Link>
     <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <button type="button" className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
         <span className="sr-only">Open user menu</span>
